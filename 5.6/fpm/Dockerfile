@@ -1,5 +1,5 @@
 FROM php:5.6-fpm
-MAINTAINER David GUENAULT
+MAINTAINER Antoine Guergnon
 
 RUN     apt-get -y update && \
         apt-get -y install git libcurl4-gnutls-dev libmcrypt-dev libpng12-dev libxml2-dev libxslt-dev vim-nox mysql-client ssmtp && \
