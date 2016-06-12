@@ -9,7 +9,7 @@ RUN     apt-get -y update && \
         locale-gen fr_FR.UTF-8 && \
         /usr/sbin/update-locale LANG=fr_FR.UTF-8 && \
         docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/ && \
-        docker-php-ext-install -j$(nproc) curl bcmath gd mcrypt mysql mysqli opcache pdo_mysql soap xsl zip iconv gd intl mbstring xmlwriter && \
+        docker-php-ext-install -j$(nproc) curl bcmath gd mcrypt mysqli opcache pdo_mysql soap xsl zip iconv gd intl mbstring xmlwriter && \
         apt-get -y clean && \
         apt-get -y autoremove && \
         rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
