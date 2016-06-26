@@ -4,4 +4,4 @@
 #
 # Example: root:your_login@your.domain:mailhub.your.domain[:port]
 # where [:port] is an optional port number that defaults to 25.
-www-data:authuser:smtp-relay:587
+www-data:AuthUser:smtp-relay:587
